@@ -16,34 +16,43 @@ Minique is an educational programming language designed to demystify how program
 set x = 42;
 set name = "John";
 set result = x + 10;
-
+```
 Operators
+```
 Addition: +
-
+```
+```
 Subtraction: -
-
+```
+```
 Multiplication: *
-
+```
+```
 Division: /
-
+```
+```
 Parentheses: ()
-
+```
 Output
+```
 show "Hello";
 show x;
 show x + y;
-
+```
 Example Program
+```
 set a = 10;
 set b = 20;
 set sum = a + b;
 show "Result:";
 show sum;
+```
 
 Output:
-
+```
 Result:
 30
+```
 
 Build Requirements
 LLVM 14+ : Core compilation infrastructure
@@ -85,4 +94,5 @@ License
 MIT License
 
 "The best way to understand compilers is to write one."
+
 
