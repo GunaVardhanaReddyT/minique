@@ -1,8 +1,6 @@
 # MINIQUE
 
-**A programming language created to understand what happens behind the scenes.**
 
-Learn compiler internals by building and exploring a real language — from lexer to LLVM IR.
 
 ## Overview
 
@@ -87,3 +85,4 @@ License
 MIT License
 
 "The best way to understand compilers is to write one."
+
