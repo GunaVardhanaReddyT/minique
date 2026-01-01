@@ -1,0 +1,5 @@
+set x = 42;
+set y = 10;
+set result = x + y;
+show "Hello from Minique!";
+show result;
