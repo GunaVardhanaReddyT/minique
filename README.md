@@ -64,6 +64,7 @@ C++17 compiler : Language implementation
 Installation
 # Clone the repository
 git clone https://github.com/GunaVardhanaReddyT/minique.git
+
 cd minique
 
 # Build
@@ -94,6 +95,7 @@ License
 MIT License
 
 "The best way to understand compilers is to write one."
+
 
 
 
