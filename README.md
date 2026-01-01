@@ -1,18 +1,7 @@
-███╗   ███╗██╗███╗   ██╗██╗ ██████╗ ██╗   ██╗███████╗
-████╗ ████║██║████╗  ██║██║██╔═══██╗██║   ██║██╔════╝
-██╔████╔██║██║██╔██╗ ██║██║██║   ██║██║   ██║█████╗  
-██║╚██╔╝██║██║██║╚██╗██║██║██║▄▄ ██║██║   ██║██╔══╝  
-██║ ╚═╝ ██║██║██║ ╚████║██║╚██████╔╝╚██████╔╝███████╗
-╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝╚═╝ ╚══▀▀═╝  ╚═════╝ ╚══════╝
-
-A human-readable programming language
-
----------------------------------------------------------------------------------
-
-Minique
+**Minique**
 This programming language is created by me to actually understand the bts (behind the scenes) of what the program actually go through.
 
-Syntax
+**Syntax**
 Variables
 text
 set x = 42;
@@ -34,7 +23,7 @@ text
 show "Hello";
 show x;
 show x + y;
-Example Program
+**Example Program**
 text
 set a = 10;
 set b = 20;
@@ -42,20 +31,20 @@ set sum = a + b;
 show "Result:";
 show sum;
 Build
-Requirements
+**Requirements**
 LLVM 14+
 
 CMake 3.13+
 
 C++17 compiler
 
-Commands
+**Commands**
 bash
 mkdir build
 cd build
 cmake .. -DLLVM_DIR=/usr/lib/llvm-14/lib/cmake/llvm
 make
-Usage
+**Usage**
 bash
 ./minique program.mq
 Implementation
@@ -85,3 +74,4 @@ v3.0: Arrays and data structures
 
 License
 MIT
+
