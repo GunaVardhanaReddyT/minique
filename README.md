@@ -1,12 +1,24 @@
-**Minique**
-This programming language is created by me to actually understand the bts (behind the scenes) of what the program actually go through.
+# MINIQUE
 
-**Syntax**
-Variables
-text
+**A programming language created to understand what happens behind the scenes.**
+
+Learn compiler internals by building and exploring a real language — from lexer to LLVM IR.
+
+## Overview
+
+Minique is an educational programming language designed to demystify how programs actually work. By implementing a simple yet complete language with LLVM, you can trace every step from source code to machine execution.
+
+**Core Philosophy:** Understanding happens when you build it yourself.
+
+## Syntax
+
+### Variables
+
+```minique
 set x = 42;
 set name = "John";
 set result = x + 10;
+
 Operators
 Addition: +
 
@@ -19,59 +31,59 @@ Division: /
 Parentheses: ()
 
 Output
-text
 show "Hello";
 show x;
 show x + y;
-**Example Program**
-text
+
+Example Program
 set a = 10;
 set b = 20;
 set sum = a + b;
 show "Result:";
 show sum;
-Build
-**Requirements**
-LLVM 14+
 
-CMake 3.13+
+Output:
 
-C++17 compiler
+Result:
+30
 
-**Commands**
-bash
+Build Requirements
+LLVM 14+ : Core compilation infrastructure
+
+CMake 3.13+ : Build system
+
+C++17 compiler : Language implementation
+
+Installation
+# Clone the repository
+git clone https://github.com/[your-username]/minique.git
+cd minique
+
+# Build
 mkdir build
 cd build
 cmake .. -DLLVM_DIR=/usr/lib/llvm-14/lib/cmake/llvm
 make
-**Usage**
-bash
+
+Usage:
+
+# Run a Minique program
 ./minique program.mq
-Implementation
-The compiler consists of four main components:
-
-Lexer - tokenizes source code
-
-Parser - builds abstract syntax tree
-
-Code generator - converts AST to LLVM IR
-
-JIT execution engine - compiles and runs code
 
 Current Features (v1.0)
-Variable assignment
+ Variable assignment
+ Arithmetic expressions
+ String and number literals
+ Print statements
+ LLVM-powered execution
 
-Arithmetic expressions
-
-String and number literals
-
-Print statements
-
-Planned Features
-v2.0: Conditionals and loops
-
-v3.0: Arrays and data structures
+| Version | Features                              | Status         |
+| ------- | ------------------------------------- | -------------- |
+| v1.0    | Variables, arithmetic, output         |  Released     |
+| v2.0    | Conditionals (if/else), loops (while) |  In Progress |
+| v3.0    | Arrays and data structures            |  Planned     |
 
 License
-MIT
+MIT License
 
+"The best way to understand compilers is to write one."
