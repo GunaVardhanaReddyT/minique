@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minique Online Compiler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>MINIQUE</h1>
+            <p>Understanding what happens behind the scenes</p>
+        </header>
+        
+        <div class="editor-section">
+            <div class="panel">
+                <h3>Code Editor</h3>
+                <textarea id="editor" spellcheck="false">set a = 10;
+set b = 20;
+set sum = a + b;
+show "Result:";
+show sum;</textarea>
+            </div>
+            
+            <div class="panel">
+                <h3>Output</h3>
+                <pre id="output">Click "Run" to execute code...</pre>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button id="runBtn" onclick="compileCode()">▶ Run</button>
+            <button onclick="clearCode()">🗑 Clear</button>
+            <button onclick="loadExample()">📝 Example</button>
+        </div>
+        
+        <div class="info">
+            <h4>Syntax Reference:</h4>
+            <ul>
+                <li><code>set x = 10;</code> - Variable assignment</li>
+                <li><code>set y = x + 5;</code> - Arithmetic (+, -, *, /)</li>
+                <li><code>show "text";</code> - Print string</li>
+                <li><code>show x;</code> - Print variable</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="wasm/minique.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
