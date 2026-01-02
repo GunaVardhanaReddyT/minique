@@ -33,13 +33,13 @@ Division: /
 ```
 Parentheses: ()
 ```
-Output
+Example : 
 ```
 show "Hello";
 show x;
 show x + y;
 ```
-Example Program
+Example 2:
 ```
 set a = 10;
 set b = 20;
@@ -95,6 +95,7 @@ License
 MIT License
 
 "The best way to understand compilers is to write one."
+
 
 
 
