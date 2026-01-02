@@ -46,3 +46,6 @@ CTestTestfile.cmake
 # Temporary files
 *.tmp
 *.temp
+emsdk/
+build-wasm/
+build/
