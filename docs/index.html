@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minique Online Compiler</title>
+    <title>Minique Online Compiler - Learn Compiler Design</title>
+    <meta name="description" content="Minique: An educational programming language to understand compiler internals">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,32 +17,28 @@
         <div class="editor-section">
             <div class="panel">
                 <h3>Code Editor</h3>
-                <textarea id="editor" spellcheck="false">set a = 10;
-set b = 20;
-set sum = a + b;
-show "Result:";
-show sum;</textarea>
+                <textarea id="editor" spellcheck="false" placeholder="Write your Minique code here..."></textarea>
             </div>
             
             <div class="panel">
-                <h3>Output</h3>
-                <pre id="output">Click "Run" to execute code...</pre>
+                <h3>Output Console</h3>
+                <pre id="output">Loading compiler...</pre>
             </div>
         </div>
         
         <div class="controls">
-            <button id="runBtn" onclick="compileCode()">▶ Run</button>
-            <button onclick="clearCode()">🗑 Clear</button>
+            <button id="runBtn" onclick="compileCode()" disabled>⏳ Loading...</button>
+            <button onclick="clearCode()">🗑️ Clear</button>
             <button onclick="loadExample()">📝 Example</button>
         </div>
         
         <div class="info">
-            <h4>Syntax Reference:</h4>
+            <h4>Quick Reference</h4>
             <ul>
-                <li><code>set x = 10;</code> - Variable assignment</li>
-                <li><code>set y = x + 5;</code> - Arithmetic (+, -, *, /)</li>
-                <li><code>show "text";</code> - Print string</li>
-                <li><code>show x;</code> - Print variable</li>
+                <li><code>set x = 10;</code> Assign a number to variable</li>
+                <li><code>set y = x + 5;</code> Arithmetic operations (+, -, *, /)</li>
+                <li><code>show "Hello";</code> Print a string</li>
+                <li><code>show x;</code> Print a variable value</li>
             </ul>
         </div>
     </div>
